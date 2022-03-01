@@ -1,6 +1,6 @@
-<div class="sticky-header z-30 fixed w-full py-2 px-12 flex justify-between items-center">
+<div class="z-30 fixed w-full py-2 px-12 flex justify-between items-center sticky-header {{request()->routeIs('home') ? '' : 'general-header'}}">
     <div class="min-w-max">
-        <a href="#"><img width="60" src="/img/logo.jpg" alt=""></a>
+        <a href="/"><img width="60" src="/img/logo.jpg" alt=""></a>
     </div>
 
     <div class="w-full">

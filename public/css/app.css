@@ -1081,10 +1081,6 @@ select {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1403,6 +1399,12 @@ h1,h2,h3,h4,h5,h6{
 }
 .sticky-header-active a{
     color: #333;
+}
+.general-header a{
+    color: #000;
+}
+.general-header{
+    background-color: #fff;
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;

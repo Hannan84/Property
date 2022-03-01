@@ -56,3 +56,9 @@ h1,h2,h3,h4,h5,h6{
 .sticky-header-active a{
     color: #333;
 }
+.general-header a{
+    color: #000;
+}
+.general-header{
+    background-color: #fff;
+}
