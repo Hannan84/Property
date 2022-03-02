@@ -51,9 +51,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .fullwidth-btn{
-    @apply bg-gray-800 text-white px-6 py-2 rounded w-full inline-block text-center
+    @apply bg-gray-800 text-white px-6 py-2 rounded w-full inline-block text-center hover:bg-gray-900 duration-200
 }
-
 .sticky-header-active{
     background-color: #fff;
 }

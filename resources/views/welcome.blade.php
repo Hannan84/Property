@@ -11,7 +11,7 @@
         <div class="container">
             <h2 class="font-bold text-2xl mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Commodi dignissimos error ipsa, provident quaerat quibusdam?</h2>
             <p class="text-gray-500 text-lg font-bold pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, voluptas.</p>
-            <a class="border-2 border-gray-700 rounded-xl text-lg px-6 py-1 inline-block" href="">Start the review</a>
+            <a class="border-2 border-gray-300 hover:border-green-400 duration-200 rounded-xl text-lg px-6 py-1 inline-block" href="">Start the review</a>
         </div>
     </div>
 
