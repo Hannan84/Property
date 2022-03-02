@@ -1,11 +1,15 @@
 require('./bootstrap');
 
 import Alpine from 'alpinejs';
-import jQuery from './jQuery-3.6.0.slim.min';
+
 
 window.Alpine = Alpine;
 
 Alpine.start();
+
+window.$ = window.jQuery = require('jquery')
+
+require('./1.8.1.slick.min');
 
 jQuery(window).scroll(function (){
    const scroll = jQuery(window).scrollTop();
@@ -17,7 +21,6 @@ jQuery(window).scroll(function (){
    }
 });
 
-// // test case
-// jQuery(document).ready(function() {
-//     console.log("test");
-// });
+jQuery(document).ready(function($) {
+    $('.gallery-slider').slick();
+});
