@@ -65,6 +65,23 @@
                         <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
                         <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
                         <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
+                    </div>
+                    <div class="thumbnail-slider">
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
                     </div>
                 </div>
                 {{-- Overview --}}

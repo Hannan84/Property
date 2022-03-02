@@ -1553,8 +1553,9 @@ h1,h2,h3,h4,h5,h6{
 .single-gallery-item{
     height: 450px;
 }
-.mt-36{
-    margin-top: 12rem;
+.single-thumbnail-item{
+    height: 80px;
+    margin: 2px;
 }
 .hover\:border-green-400:hover {
   --tw-border-opacity: 1;
