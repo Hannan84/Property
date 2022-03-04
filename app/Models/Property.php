@@ -9,9 +9,6 @@ class Property extends Model
 {
     use HasFactory;
 
-    public function featured(){
-        $this->belongsTo(Media::class, foreignKey:'featured_media_id');
-    }
 
     public function location(){
         $this->belongsTo(Location::class, foreignKey:'location_id');

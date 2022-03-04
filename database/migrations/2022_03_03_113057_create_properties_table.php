@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
 
-            $table->unsignedBigInteger('featured_media_id');
+            $table->string('featured_image');
             $table->unsignedBigInteger('location_id');
 
             $table->unsignedBigInteger('price');
@@ -35,7 +35,6 @@ return new class extends Migration
             $table->timestamps();
 
 
-            $table->foreign('featured_media_id')->references('id')->on('media');
             $table->foreign('location_id')->references('id')->on('locations');
         });
     }
