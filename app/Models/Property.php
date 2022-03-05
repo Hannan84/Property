@@ -14,7 +14,4 @@ class Property extends Model
         $this->belongsTo(Location::class, foreignKey:'location_id');
     }
 
-    public function gallery(){
-        $this->hasMany(Media::class, foreignKey:'property_id ');
-    }
 }
