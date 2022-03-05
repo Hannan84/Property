@@ -4,7 +4,7 @@
     <div class="shadow-md border-2 border-gray-300 py-2 bg-white breadcrumb mt-28">
         <div class="container mx-auto">
             <ul class="flex items-center">
-                <li><a class="text-3xl text-red-800" href=""><i class="fa fa-home"></i></a></li>
+                <li><a class="text-xl text-red-800" href="">property</a></li>
                 <li class="mx-3"><i class="fa fa-angle-right"></i></li>
                 <li><a class="text-red-800" href=""></a></li>
                 <li class="mx-3"><i class="fa fa-angle-right"></i></li>
@@ -19,7 +19,7 @@
             <div class="flex justify-between">
                 <div class="w-8/12">
                     <h2 class="text-3xl text-gray-600">{{$single_property->name}}</h2>
-                    <h3 class="text-lg mt-2"><span class="text-red-800"></span></h3>
+                    <h3 class="text-lg mt-2">Price: <span class="text-red-800">{{number_format($single_property->price)}} Tk</span></h3>
                 </div>
                 <div class="w-3/12">
                     <ul class="flex justify-end">
@@ -86,15 +86,15 @@
                 </div>
                 {{-- Overview --}}
                 <div class="flex justify-between items-center bg-white p-8 mt-10 shadow-sm">
-                    <h4 class="text-lg w-2/12 langBN"></h4>
+                    <h4 class="text-lg w-2/12 langBN">Overview</h4>
                     <div class="border-l-2 border-gray-300 pl-5 ml-5 w-10/12 text-base">
-                        <p></p>
+                        <p>{{$single_property->overview}}</p>
                     </div>
                 </div>
 
-                {{-- Property Featuers --}}
+                {{-- Property Features --}}
                 <div class="flex justify-between items-center bg-white p-8 mt-10 shadow-sm langBN">
-                    <h4 class="text-lg w-2/12"></h4>
+                    <h4 class="text-lg w-2/12">Property Features</h4>
                     <div class="ml-2 w-10/12 text-base flex justify-between">
                         <div class="flex-1 border-l-2 border-gray-300 ml-3 pl-3 self-center">
                             <ul>
