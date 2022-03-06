@@ -100,13 +100,21 @@
                             <ul>
                                 <li class="flex text-sm mb-2">
                                     <div class="flex"><i class="fa fa-home mr-2 text-red-400 w-5 text-center"></i><span
-                                            class="text-sm"></span></div>
-                                    <span class="ml-2 font-bold"></span>
+                                            class="text-sm">Type:</span></div>
+                                    <span class="ml-2 font-bold">
+                                        @if($single_property->type == 1)
+                                            {{'apartment'}}
+                                        @elseif($single_property->type == 2)
+                                            {{'villa'}}
+                                        @else
+                                            {{'land'}}
+                                        @endif
+                                    </span>
                                 </li>
                                 <li class="flex text-sm">
                                     <div class="flex"><i class="fa fa-bed mr-2 text-red-400 w-5 text-center"></i><span
-                                            class="text-sm"></span></div>
-                                    <span class="ml-2 font-bold"></span>
+                                            class="text-sm">Bedrooms:</span></div>
+                                    <span class="ml-2 font-bold">{{$single_property->bedrooms}}</span>
                                 </li>
                             </ul>
                         </div>
@@ -115,14 +123,14 @@
                                 <li class="flex text-sm mb-2">
                                     <div class="flex"><i
                                             class="fa fa-shower mr-2 text-red-400 w-5 text-center"></i><span
-                                            class="text-sm"></span></div>
-                                    <span class="ml-2 font-bold"></span>
+                                            class="text-sm">Bathrooms</span></div>
+                                    <span class="ml-2 font-bold">4</span>
                                 </li>
                                 <li class="flex text-sm">
                                     <div class="flex"><i
                                             class="fa fa-map-marker mr-2 text-red-400 w-5 text-center"></i><span
-                                            class="text-sm"></span></div>
-                                    <span class="ml-2 font-bold capitalize noTranslate"></span>
+                                            class="text-sm">Location:</span></div>
+                                    <span class="ml-2 font-bold capitalize noTranslate">{{$single_property->location_id}}</span>
                                 </li>
                             </ul>
                         </div>
@@ -131,14 +139,24 @@
                                 <li class="flex text-sm mb-2">
                                     <div class="flex"><i
                                             class="fa fa-gratipay mr-2 text-red-400 w-5 text-center"></i><span
-                                            class="text-sm"></span></div>
-                                    <span class="ml-2 font-bold"></span>
+                                            class="text-sm">{{'Living space sqm'}}:</span></div>
+                                    <span class="ml-2 font-bold">456</span>
                                 </li>
                                 <li class="flex text-sm">
                                     <div class="flex"><i
                                             class="fa fa-low-vision mr-2 text-red-400 w-5 text-center"></i><span
-                                            class="text-sm"></span></div>
-                                    <span class="ml-2 font-bold"></span>
+                                            class="text-sm">Pool:</span></div>
+                                    <span class="ml-2 font-bold">
+                                        @if($single_property->pool == 1)
+                                            Privet
+                                        @elseif($single_property->pool == 2)
+                                            Public
+                                        @elseif($single_property->pool == 3)
+                                            Both
+                                        @else
+                                            No
+                                        @endif
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -149,17 +167,15 @@
 
                 {{-- Overview --}}
                 <div class="flex justify-between items-center bg-white p-8 mt-10 shadow-sm">
-                    <h4 class="text-lg w-2/12"></h4>
+                    <h4 class="text-lg w-2/12">{{'Why buy this Property'}}</h4>
                     <div class="border-l-2 border-gray-300 pl-5 ml-5 w-10/12 text-base">
-
+                        {{$single_property->why_buy}}
                     </div>
                 </div>
 
                 {{-- Description --}}
                 <div class="bg-white p-8 mt-10 shadow-sm" id="description">
-
-
-
+                    {{$single_property->description}}
                 </div>
 
             </div>{{-- Left Content End --}}
