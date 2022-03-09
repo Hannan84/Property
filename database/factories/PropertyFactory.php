@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Location;
+use App\Models\Media;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

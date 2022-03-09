@@ -60,28 +60,14 @@
             <div class="w-9/12 mx-2">
                 <div id="slider" class="">
                     <div class="gallery-slider">
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-gallery-item bg-cover bg-center"></div>
+                        @foreach($single_property->gallery as $gallery)
+                            <div style="background-image: url({{$gallery->name}})" class="single-gallery-item bg-cover bg-center"></div>
+                        @endforeach
                     </div>
                     <div class="thumbnail-slider">
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
-                        <div style="background-image: url(/img/hero-bg.jpg)" class="single-thumbnail-item bg-cover bg-center"></div>
+                        @foreach($single_property->gallery as $gallery)
+                            <div style="background-image: url({{$gallery->name}})" class="single-thumbnail-item bg-cover bg-center"></div>
+                        @endforeach
                     </div>
                 </div>
                 {{-- Overview --}}
@@ -130,7 +116,7 @@
                                     <div class="flex"><i
                                             class="fa fa-map-marker mr-2 text-red-400 w-5 text-center"></i><span
                                             class="text-sm">Location:</span></div>
-                                    <span class="ml-2 font-bold capitalize noTranslate">{{$single_property->location_id}}</span>
+                                    <span class="ml-2 font-bold capitalize noTranslate">{{$single_property->location->name}}</span>
                                 </li>
                             </ul>
                         </div>

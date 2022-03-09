@@ -11,7 +11,9 @@ class Property extends Model
 
 
     public function location(){
-        $this->belongsTo(Location::class, foreignKey:'location_id');
+        return $this->belongsTo(Location::class, foreignKey:'location_id');
     }
-
+    public function gallery(){
+        return $this->hasMany(Media::class, foreignKey:'property_id');
+    }
 }
