@@ -16,4 +16,11 @@ class PropertyController extends Controller
             'single_property' => $single_property
         ]);
     }
+
+    public function index(Request $request){
+        $last_property = Property::latest()->where('type', $request->type)->paginate(12);
+        return view('property.index',[
+            'properties' => $last_property
+        ]);
+    }
 }

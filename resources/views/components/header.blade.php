@@ -5,9 +5,9 @@
 
     <div class="w-full">
         <ul class="flex justify-center text-white">
-            <li><a class="inline-block p-3" href="#">Land</a></li>
-            <li><a class="inline-block p-3" href="#">Villa</a></li>
-            <li><a class="inline-block p-3" href="#">Apartment</a></li>
+            <li><a class="inline-block p-3" href="{{route('properties')}}?type=0">Land</a></li>
+            <li><a class="inline-block p-3" href="{{route('properties')}}?type=1">Apartment</a></li>
+            <li><a class="inline-block p-3" href="{{route('properties')}}?type=2">Villa</a></li>
             <li><a class="inline-block p-3" href="#">About Us</a></li>
             <li><a class="inline-block p-3" href="#">Contact Us</a></li>
         </ul>
