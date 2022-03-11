@@ -7,6 +7,18 @@
         </div>
     </div>
 
+{{--    Search from area start--}}
+
+    <div class="-mt-7">
+        <div class="container">
+            <div class="rounded-lg bg-white p-2 relative z-20 shadow-lg">
+                @include('components.property-search-form')
+            </div>
+        </div>
+    </div>
+
+{{--    Search from area end--}}
+
     <div class="py-32 text-center">
         <div class="container">
             <h2 class="font-bold text-2xl mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Commodi dignissimos error ipsa, provident quaerat quibusdam?</h2>
