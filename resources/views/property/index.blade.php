@@ -17,14 +17,12 @@
     <div class="bg-white py-8">
         <div class="container mx-auto">
             <h3 class="text-3xl text-gray-600">Properties
-            @if(request('type')==0)
+            @if(request('type')== '0')
                 ~Land
-            @elseif(request('type')==1)
+            @elseif(request('type')== '1')
                 ~Apartment
-            @elseif(request('type')==2)
+            @elseif(request('type')== '2')
                 ~Villa
-            @else
-                ~Not Found
             @endif
             </h3>
         </div>

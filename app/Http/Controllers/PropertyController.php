@@ -18,7 +18,15 @@ class PropertyController extends Controller
     }
 
     public function index(Request $request){
-        $last_property = Property::latest()->where('type', $request->type)->paginate(12);
+
+
+        $last_property = Property::latest();
+
+        if (!empty($request->type)){
+            $last_property = $last_property->where('type', $request->type);
+        }
+        $last_property = $last_property->paginate(12);
+
         return view('property.index',[
             'properties' => $last_property
         ]);
