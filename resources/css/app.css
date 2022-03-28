@@ -75,3 +75,36 @@ h1,h2,h3,h4,h5,h6{
     height: 80px;
     margin: 2px;
 }
+
+.vertical-search-form > form > div {
+    display: block;
+    min-width: 100%;
+    margin-top: 15px;
+}
+
+.vertical-search-form > form {
+    display: block;
+    margin-top: 39px;
+}
+
+.vertical-search-form .border-gray-500 {
+    display: none;
+}
+
+.vertical-search-form .ml-5 {
+    margin-left: 12px;
+    min-width: 92%;
+}
+
+.vertical-search-form > form > div > div {
+    margin-top: 15px;
+}
+
+.vertical-search-form .btn {
+    min-width: 100%;
+    margin-top: 5px;
+}
+
+form .label > div > div > label {
+    display: none;
+}
