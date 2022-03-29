@@ -1603,6 +1603,7 @@ h1,h2,h3,h4,h5,h6{
     height: 80px;
     margin: 2px;
 }
+/*search form css for properties page*/
 .vertical-search-form > form > div {
     display: block;
     min-width: 100%;
@@ -1627,6 +1628,10 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 5px;
 }
 form .label > div > div > label {
+    display: none;
+}
+/*search form css for home page */
+.label > form > div > div > label {
     display: none;
 }
 .hover\:border-green-400:hover {
