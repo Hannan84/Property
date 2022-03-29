@@ -3,7 +3,7 @@
 hove:bg-yellow-500 hover:text-white duration-200 rounded-full"></a>
     <div class="py-20 bg-center" style="background-image: url('/img/property.jpg')"></div>
     <div class="p-3">
-        <h2 class="leading-0 text-base">{{$property->name}}</h2>
+        <h2 class="leading-0 text-base">{{preg_replace('/((\w+\W*){'.(2).'}(\w+))(.*)/', '${1}', $property->name)}}</h2>
         <h3 class="text-2xl py-3">{{$property->price}} Tk </h3>
         <div class="border-t-2">
             <ul class="flex items-center -mx-1 my-4">

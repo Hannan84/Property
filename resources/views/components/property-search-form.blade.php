@@ -13,9 +13,9 @@
             <label for="location" class="text-gray-400">Location</label>
             <select name="location" id="location" class="border-0 focus:ring-0">
                 <option value="">Location</option>
-                <option {{request('type') == '0' ? 'selected="selected"' : ''}} value="0">Land</option>
-                <option {{request('type') == '1' ? 'selected="selected"' : ''}} value="1">Apartment</option>
-                <option {{request('type') == '2' ? 'selected="selected"' : ''}} value="2">Villa</option>
+                @foreach($locations as $location)
+                    <option {{request('location') == $location->id ? 'selected="selected"' : ''}} value="{{$location->id}}">{{$location->name}}</option>
+                @endforeach
             </select>
         </div>
         <div class="py-3 self-center border-gray-500 border"></div>
@@ -56,7 +56,7 @@
         </div>
     </div>
     <div class="flex justify-between items-center w-3/12 ml-5">
-        <input type="search" placeholder="Search properties" class="rounded-lg w-full px-4 py-2 mr-4 focus:border-gray-700 focus:ring-0">
+        <input type="search" name="property_search" value="{{request('property_search')}}" placeholder="Search properties" class="rounded-lg w-full px-4 py-2 mr-4 focus:border-gray-700 focus:ring-0">
         <button type="submit" class="btn">Search</button>
     </div>
 </form>

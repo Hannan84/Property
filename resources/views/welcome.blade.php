@@ -12,7 +12,7 @@
     <div class="-mt-7">
         <div class="container">
             <div class="rounded-lg bg-white p-2 relative z-20 shadow-lg label">
-                @include('components.property-search-form')
+                @include('components.property-search-form',['locations' => $locations])
             </div>
         </div>
     </div>
