@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,7 @@ use App\Http\Controllers\PropertyController;
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/property/{id}', [PropertyController::class, 'single'])->name('single-property');
 Route::get('/properties', [PropertyController::class, 'index'])->name('properties');
+Route::post('/property_inquiry/{id}', [ContactController::class, 'property_inquiry'])->name('property_inquiry');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
