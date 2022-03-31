@@ -177,6 +177,10 @@
                 <div class="px-4 py-5 text-left bg-gray-300 my-5">
                     <h1 class="text-2xl font-normal leading-none mb-5 langBN"></h1>
 
+                    @if(Session::get('message'))
+                    <p class="bg-green-100 text-green-700 mb-6 p-3">{{Session::get('message')}}</p>
+                    @endif
+
                     <form action="{{route('property_inquiry',$single_property->id)}}" method="POST">
                         @csrf
 
